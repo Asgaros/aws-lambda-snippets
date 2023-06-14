@@ -10,3 +10,8 @@ Downloads a file from a remote server via SFTP and stores it into the temporary 
 - [Source](https://github.com/Asgaros/aws-lambda-snippets/tree/main/download-file-via-sftp)
 - Dependencies:
   - [ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client)
+
+### upload-file-to-s3
+Uploads a file from the temporary AWS Lambda storage to an S3 Bucket. In this example an XML file is used which got compressed with gzip.
+
+- [Source](https://github.com/Asgaros/aws-lambda-snippets/tree/main/upload-file-to-s3)
