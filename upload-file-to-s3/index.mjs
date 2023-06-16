@@ -11,8 +11,8 @@ export const handler = async() => {
 		const s3Client = new S3Client({
 			region: bucketRegion,
 		});
-
-		// Upload the file to S3.
+		
+		// Create S3 PutObject Command.
 		let s3Command = new PutObjectCommand({
 			Bucket: bucketName,
 			Body: FS.createReadStream('/tmp/example.xml.gz'), // Path to file in temporary AWS Lambda storage.
@@ -20,6 +20,8 @@ export const handler = async() => {
 			ContentEncoding: 'gzip',                          // Content encoding of file. Here the file is compressed with gzip.
 			Key: 'prefix/path/example.xml.gz',                // Key of the object which is a combination of prefix + object name.
 		});
+
+		// Send the Command via the S3 Client to upload the file to S3.
 		await s3Client.send(s3Command);
 
 		// Return success response.
