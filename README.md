@@ -10,7 +10,7 @@ Downloads a file from an S3 Bucket and stores it in the temporary AWS Lambda sto
 - [Source](https://github.com/Asgaros/aws-lambda-snippets/tree/main/download-file-from-s3)
 
 ### download-file-via-sftp
-Downloads a file from a remote server via SFTP and stores it into the temporary AWS Lambda storage.
+Downloads a file from a remote server via SFTP and stores it in the temporary AWS Lambda storage.
 
 - [Source](https://github.com/Asgaros/aws-lambda-snippets/tree/main/download-file-via-sftp)
 - Dependencies:

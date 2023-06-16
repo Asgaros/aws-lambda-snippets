@@ -21,7 +21,7 @@ export const handler = async() => {
 			const sourceFile = '/path/to/file/on/remote/server/example.xml.gz';
 			const targetFile = '/tmp/example.xml.gz';
 
-			// Download the file via SFTP into the temporary AWS Lambda storage.
+			// Download the file via SFTP to the temporary AWS Lambda storage.
     	    await sftpClient.fastGet(sourceFile, targetFile);
     	    
     	    // Return success response.
