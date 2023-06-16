@@ -29,6 +29,8 @@ export const handler = async() => {
 		
 		return response;
     } catch(error) {
+		console.log(error);
+		
         // Return error response.
         let response = {
             statusCode: 500,

@@ -35,6 +35,8 @@ export const handler = async() => {
     	    throw new Error(error);
     	});
     } catch(error) {
+		console.log(error);
+		
         // Return error response.
         let response = {
             statusCode: 500,
