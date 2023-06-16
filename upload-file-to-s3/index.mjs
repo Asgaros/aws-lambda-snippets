@@ -21,6 +21,13 @@ export const handler = async() => {
 			Key: 'prefix/path/example.xml.gz',                // Key of the object which is a combination of prefix + object name.
 		});
 		await s3Client.send(s3Command);
+
+		// Return success response.
+		let response = {
+			statusCode: 200,
+		};
+		
+		return response;
     } catch(error) {
         // Return error response.
         let response = {
