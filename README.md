@@ -4,6 +4,13 @@ A collection of AWS Lambda snippets based on Node.js.
 ## Introduction
 This repository contains a collection of useful AWS Lambda snippets based on Node.js which can be used for different purposes.
 
+### decompress-gzip-file
+Decompresses a file compressed with GZIP in the temporary AWS Lambda storage.
+
+- [Source](https://github.com/Asgaros/aws-lambda-snippets/tree/main/decompress-gzip-file)
+- Dependencies:
+  - [node-gzip](https://www.npmjs.com/package/node-gzip)
+
 ### download-file-from-s3
 Downloads a file from an S3 Bucket and stores it in the temporary AWS Lambda storage.
 
